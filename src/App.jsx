@@ -1,10 +1,20 @@
-function App() {
+import React from 'react';
+import { Header } from './components/Header';
+import styles from './App.module.css';
+import { Sidebar } from './components/Sidebar';
 
-  return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  )
+function App () {
+	return (
+		<div>
+			<Header />
+
+			<div className={styles.wrapper}>
+				<Sidebar />
+				<main></main>
+			</div>
+
+		</div>
+	);
 }
 
-export default App
+export default App;
